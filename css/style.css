@@ -1,0 +1,880 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    z-index: 1000;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 15px 90px;
+    position: relative;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+  
+
+}   
+.body{
+    height: 4000px;
+} 
+.logo {
+
+    background-color: rgb(255, 156, 195);
+
+  border-radius: 25px;
+    height:50px;
+    width:50px;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+justify-content: center;
+padding: 15px 20px;
+}
+.worldcapital{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 10px;
+
+
+
+}
+.Capital{
+    font-size: 28px;
+    color: rgb(131, 122, 229);
+    font-weight: bold;
+
+}
+.icon-row{
+    margin-left: 7px;
+}
+.Shop{
+    font-size: 28px;
+    color:rgb(128, 79, 79);
+    margin-left: 7px;
+}
+.logo i {
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    margin-top: -5px;
+ 
+}
+
+.main-list {
+  
+    display: flex;
+    list-style: none;
+}
+.main-list li {
+    position: relative;
+    padding: 15px;
+}
+.main-list a  {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+    
+.sale-banner {
+    text-align: center;
+    background-color: rgb(16, 100, 235);
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+ margin-top: 15;
+
+}
+.sale-banner:hover{
+    font-size: 16px;
+}
+
+.maga-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 230px;
+    box-shadow: 0px 4px 6px rgb(255, 119, 119);
+    padding: 15px;
+    display: flex;
+    gap: 20;
+    height: 230px;
+    visibility: hidden;
+    transition: 1ms;
+   
+}
+.maga-menu h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgb(186, 157, 157);
+    border-bottom: 5px;
+    display: inline-block;
+    border-bottom: 2px dotted rgb(166, 161, 161);
+ 
+}
+
+.maga-menu ul li{
+    padding: 5px 0;
+}
+.maga-menu ul li a{
+   
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin: -5;
+    padding: 10 0px ;
+display: block;
+
+
+}
+.iconleft {
+    display: flex;
+    gap: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+margin-left: auto;
+}
+.login-blog{
+    list-style: none;
+}
+.maga-menu ul li a:hover{
+    color: rgb(136, 0, 255);
+}
+
+.dropdown:hover  .maga-menu{
+    visibility: visible;
+}
+.dropdown{
+    position: relative;
+}
+.iconleft  i:hover{
+transform: translateY(-5px);
+transition: 0.2s;
+color: blue;
+}
+.header .main-list li{
+    position: relative;
+}
+.header .main-list .limainlist::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid  rgb(255, 156, 195);;
+    border-radius: 5px;
+    opacity: 0;
+    transition:  0.6s ;
+
+}
+.header .main-list li:hover::after{
+    opacity: 0.6;
+   top: 100%;
+}
+.header .main-list .limainlist a:hover{
+color: rgb(136, 0, 255);
+}
+nav ul li a:hover{
+    font-size: 15px;
+
+}
+.Shop-Now{
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    border-bottom: 1px double rgb(166, 161, 161);
+
+}
+.container-hero {
+    position: relative;
+}
+.divhero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/portrait-handsome-smiling-stylish-young-man-model-wearing-jeans-clothes-fashion-man_158538-5025.jpg);
+    position: relative;
+  background-size: cover;
+ }
+ 
+.content-hero{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+   position: absolute;
+   text-align: center;
+   width: 650;
+}
+.title-hero{
+font-family: "Dancing Script", serif;
+    font-size: 30px;
+    color:rgb(30, 30, 236)
+}
+.min-style{
+    color: rgb(153, 22, 74);
+    font-size:37px ;
+    font-family: "Prompt", serif;
+    
+}
+.p-hero{
+    font-size: 15;
+    letter-spacing: 1px;
+    color:rgb(124, 124, 124) ;
+    font-weight: bold;
+}
+.btn1-hero{
+text-transform: capitalize;
+font-size: 20;
+border-radius: 15px;
+border:none;
+padding:13 10;
+}
+.btn1-hero:hover{
+    opacity: 0.2;
+}
+
+.Fashion-women-men-baby{
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+gap: 25px;
+} 
+.fashion-card{
+width: 370px;
+    height: 320px;
+    position: relative;
+  margin-top: 80px;
+padding: 10px;
+ 
+   
+    
+
+}
+.fashion-card img{
+ width: 100%;
+ transition: 0.3s; 
+
+}
+.fashion-card img:hover{
+    transform: scale(1.09);
+}
+.divspan{
+    margin-top: -20px;
+    font-size: 17px;
+    position: absolute;
+    bottom: 50px;
+margin-right: 100px;
+    transform: translatex(-50);
+    padding: 30px;
+    border: 5px;
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+   
+}
+.fashion-card:hover .divspan{
+    transform: translatey(-50%) scale(1.1);
+
+}
+.Shop-Now{
+    color: rgb(0, 0, 0);
+}
+.title-ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px
+}
+.mainlist{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.mainlist .limainlist a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.full-width-line{
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: grey;
+    margin: 5px 0;
+}
+.world-women a {
+    color: rgb(0, 13, 255);
+}
+.main-list-trend  {
+  
+    display: flex;
+    list-style: none;
+}
+.main-list-trend  li {
+    position: relative;
+    padding: 15px;
+
+}
+.h3-trending-weak{
+    font-size: 30px;
+}
+.arrow{
+    font-size: 30px;
+    color: black;
+}
+.arrow:hover{
+    color: gray;
+}
+.parent-trendcard{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+width: 100%;
+height: 100vh; 
+margin: auto;
+padding: 30px;
+position: relative;
+margin-top: 100px;
+}
+.trend-card{
+  width: 20%;
+  height: 350px;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+}
+.left-arrow{
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 10%;
+}
+.image-container{
+    position: relative;
+    width: 100%;
+    height: 350;
+ 
+}
+.main-image{
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/div1show.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+
+}
+.main-image2{
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/div2.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+
+}
+.main-image3{
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/div3\ show.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+
+}
+.main-image4{
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/div4.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+
+}
+
+
+
+.hover-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/showmain.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 0.6s;
+    transform: rotate(0deg);
+}
+.image-container:hover .hover-image{
+    opacity: 1;
+    transform: rotatey(180deg);
+}
+
+.icon-image-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transition: 0.3s;
+    opacity: 0;
+    width: 60%;
+    bottom: 10px;
+align-items: center;
+margin-left: 47px;
+ 
+}
+.icon-hoverwomen{
+color:rgb(206, 48, 48);
+transition: 0.3s;
+font-size: 27px;
+background-color: rgba(0, 0, 0,0.7);
+width: 45px;
+height: 45px;
+text-align: center;
+padding-top: 5px;
+margin-top: 40px;
+}
+   .icon-hoverwomen:hover{
+    color: blue;
+   }
+
+.image-container:hover .icon-image-container{
+    opacity: 1;
+
+}
+.price-product{
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.3s;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+.h4-name{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.p-price-main{
+    font-size: 14px;
+    color: rgb(212, 203, 203);
+}
+.p-oldprice{
+    font-size: 12px;
+    color: grey;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.trend-card:hover .price-product .h4-name{
+    color: red;
+}
+.section3{
+display: flex;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px 0;
+background-color:rgb(255, 255, 255);
+
+}
+.container-profile{
+text-align: center;
+width: 100%;
+padding: 40px;
+border-radius: 2px;
+background-color:rgb(180, 172, 172);
+border: 2px solid gray;
+}
+
+.h3-CustomerTestimonial{
+    font-size: 24px;
+margin-bottom: 15px;
+}
+.p-desc{
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+}
+.image-circle-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.circle-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.img-span-circle{
+    text-align: left;
+}
+.h3-circle-img{
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.p-pimgcircle{
+    font-size: 14px;
+    color: #837878;
+
+}
+
+.world-men a {
+    color: rgb(0, 13, 255);
+}
+
+
+.main-image1-2{
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/mendiv1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+
+}
+.main-image2-2{
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/div2men.jpg);
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+
+}
+.main-image3-2{
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/div3men.jpg);
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+}
+.main-image4-2{
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/div4men.jpg);
+    background-size: cover;
+    background-position: center;
+ 
+    position: absolute;
+
+}
+
+
+
+.hover-image2{
+    position: absolute;
+    width:100% ;
+    height: 100%;
+    background-image: url(../images/main\ show\ men.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 0.6s;
+    transform:translateY(-100%);
+}
+.image-container:hover .hover-image2{
+    opacity:1 ;
+    transform: translateY(0);
+}
+/* Section 4 - Latest News */
+.latest-news {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: white;
+    width: 30%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+transition: 0.3s;
+}
+
+.news-card img {
+    width: 100%;
+    height: 320px;
+  transition: 0.3s;
+
+}
+.news-card:hover {
+  
+   transform:scale(1.09);
+
+}
+
+.news-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.news-category {
+    font-size: 14px;
+    color: gray;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.news-heading {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+    transition: 0.3;
+}
+
+.news-description {
+    font-size: 14px;
+    color: #666;
+}
+.news-card:hover .news-heading{
+    color: red;
+}
+.read-moreafterp{
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: underline;
+    transition: 0.2s;
+    color: black;
+    margin-top: 10px;
+}
+.read-moreafterp:hover{
+    color: red;
+    transform:scale(1.09);
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    background: #e0e5e3;
+    position: relative;
+}
+
+.feature {
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.3s ;
+}
+
+.feature i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: block;
+   color: #666;
+}
+
+.feature h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #666;
+}
+.icon-feature ,.icon-featurehover{
+bottom:  0;
+right:  0;
+    transition: 0.6s;
+    position: absolute;
+    display: block;
+    opacity: 1;
+}
+.icon-featurehover{
+opacity: 0;
+transform: translatey(20px);
+}
+.feature:hover .icon-feature{
+    opacity: 0;
+
+    transform: translatey(-20px);
+
+}
+.feature:hover .icon-featurehover{
+    opacity: 1;
+    color: rgb(13, 13, 56);
+    transform: translatey(0px);
+
+}
+
+
+footer {
+
+    background-color: #111;
+    padding: 40px 0;
+}
+
+.newsletter {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.newsletter .h3-newsletter {
+    font-size:25px;
+    color: #ff0000;
+}
+
+.newsletter .p-newsletter {
+    color: #aaa;
+    margin: 10px 0;
+}
+
+.newsletter-input {
+    display: inline-block;}
+
+.newsletter-input input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+  
+}
+
+.newsletter-input .sub-newsletter {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.newsletter-input .sub-newsletter:hover {
+    transform: scale(1.09);
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    color:blue;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    color: #aaa;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #aaa;
+    margin-top: 30px;
+}
+
+.footer-bottom span {
+    color: red;
+}
+
+.footer a {
+    color: #2200ff;
+    text-decoration: none;
+}
+
+.footer-column ul li:hover {
+    text-decoration: underline;
+}
+.footer-bottom span {
+    color: red;
+    display: inline-block;
+    font-size: 30px;
+    animation: pulse 3s infinite;
+  
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.iconsupright1{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  
+} 
+.iconsupright1 a{
+    color: rgb(226, 43, 43);
+    font-size: 25px;
+    margin-top: 0 10px;
+    transition: 0.5s;
+}
+.iconsupright1 a:hover{
+    color: rgb(255, 255, 255);
+transform: scale(1.09);
+}
+.line-footer{
+    width: 90%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+.body{
+  background-color: #afafaf;
+}
+
+
